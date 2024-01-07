@@ -1,0 +1,144 @@
+.bg-img-header {
+    background-image: url('images/card-images.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0px 60px 0px;
+    padding-bottom: 30px;
+}
+
+.text-color {
+    background: linear-gradient(to right, #16B862, #00858F);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.btn {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #76BB39 0%, #16B862 51.88%, #00858F 100%);
+    box-shadow: 0px 8px 8px -4px rgba(22, 184, 98, 0.12), 0px 16px 24px 0px rgba(22, 184, 98, 0.24), 0px 2px 4px -1px rgba(10, 70, 82, 0.12), 0px 0px 1px 0px rgba(22, 184, 98, 0.24);
+    min-height: 48px;
+    min-width: 160px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #76BB39;
+}
+
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0);
+    /* Set a semi-transparent white background */
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    /* Apply a blur effect to the background */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Border with transparency for better visibility */
+}
+
+.step-color {
+    color: #fff;
+    /* Text color */
+}
+
+
+.footer-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+    background-image: url('./images/three-banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(27, 18, 18, 0.671);
+    height: 40vh;
+}
+
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-item {
+    flex: 0 0 16.666%;
+    max-width: 16.666%;
+    padding: 5px;
+    /* box-sizing: border-box;*/
+}
+
+.logo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+
+
+.container {
+    width: 90%;
+    height: 80%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    .testimonial-box {
+
+        .testimonial {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.055);
+            border-radius: 15px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+
+            .testimonial-text {
+                font-size: 16px;
+                line-height: 25px;
+                text-align: center;
+                padding: 25px 15px;
+                width: 100%;
+            }
+
+            .testimonial-user {
+                display: flex;
+                align-items: center;
+
+                .user-img {
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.123);
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+
+                .user-info {
+                    margin: 0 20px;
+                    display: grid;
+                    grid-template-rows: 1fr 1fr;
+
+                    .user-name {
+                        font-weight: 800;
+                    }
+
+                }
+            }
+        }
+    }
+}
