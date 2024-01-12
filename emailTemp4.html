@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template Design</title>
+
+    <link rel="shortcut icon" href="images/fav-removebg-preview.png" type="image/x-icon">
+
+
+
+    <!-- Bootstrap Cdn LINK  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Druk:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: "Druk", sans-serif;
+        }
+
+        .bg-img-header {
+            background-image: url('images/card-images.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px 0px 60px 0px;
+            padding-bottom: 30px;
+        }
+
+        .text-color {
+            background: linear-gradient(to right, #16B862, #00858F);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+
+        }
+
+        .btn {
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #76BB39 0%, #16B862 51.88%, #00858F 100%);
+            box-shadow: 0px 8px 8px -4px rgba(22, 184, 98, 0.12), 0px 16px 24px 0px rgba(22, 184, 98, 0.24), 0px 2px 4px -1px rgba(10, 70, 82, 0.12), 0px 0px 1px 0px rgba(22, 184, 98, 0.24);
+            min-height: 48px;
+            min-width: 160px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 18px;
+            line-height: 24px;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 30px;
+            border: 1px solid #76BB39;
+        }
+
+
+
+        .card {
+            background-color: rgba(255, 255, 255, 0);
+            /* Set a semi-transparent white background */
+            border-radius: 15px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            /* Apply a blur effect to the background */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            /* Border with transparency for better visibility */
+        }
+
+        .step-color {
+            color: #fff;
+            /* Text color */
+        }
+
+
+        .footer-img {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+            background-image: url('./images/three-banner.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(27, 18, 18, 0.671);
+            height: 40vh;
+        }
+
+
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-item {
+            flex: 0 0 12%;
+            max-width: 16.666%;
+            padding: 5px;
+            /* box-sizing: border-box;*/
+        }
+
+        /* mobile view  */
+        @media (max-width: 767px) {
+            .logo-item {
+                flex: 0 0 16%;
+                max-width: 16.666%;
+                padding: 5px;
+                /* box-sizing: border-box;*/
+            }
+        }
+
+        .logo-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 100%;
+        }
+
+
+
+
+        .container {
+            width: 90%;
+            height: 80%;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+
+            .testimonial-box {
+                .testimonial-bottom {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.055);
+                    /* border-radius: 15px; */
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    padding: 10px;
+                    backdrop-filter: blur(10px);
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+
+                }
+
+                .testimonial {
+                    width: 100%;
+                    height: 100%;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    padding: 20px;
+
+
+
+                    .testimonial-text {
+                        font-size: 16px;
+                        line-height: 25px;
+                        text-align: center;
+                        padding: 25px 15px;
+                        width: 100%;
+                    }
+
+                    .testimonial-user {
+                        display: flex;
+                        align-items: center;
+
+                        .user-img {
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.123);
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                        }
+
+                        .user-info {
+                            margin: 0 20px;
+                            display: grid;
+                            grid-template-rows: 1fr 1fr;
+
+                            .user-name {
+                                font-weight: 800;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+
+</head>
+
+<body class="">
+    <!-- header section-1 start  -->
+    <div class="bg-img-header">
+
+        <div style="margin-bottom: 5%;">
+            <nav class="navbar navbar-light text-light py-3" style="width: 100%;">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.webp" alt="" style="width: 225px; height: 34px;"
+                            class="d-inline-block align-text-top">
+                    </a>
+                </div>
+            </nav>
+            <!-- header section-1 End  style="padding: 5.875rem 0 9.375rem;"  -->
+
+
+            <!-- Home section-2 start -->
+            <div class="container-fluid top-banner text-center d-flex align-items-center justify-content-center px-0">
+                <div class="col-lg-5 col-md-6 text-white">
+                    <h3 style="font-size: 37px; font-weight: 900; text-transform: uppercase;">
+                        DON'T JUST<br>TAKE OUR
+                    </h3>
+                    <h1 style="font-size: 50px; font-weight: 900; text-transform: uppercase; line-height: 60px;">
+                        <span class="text-color">WORD</span> FOR IT
+                    </h1>
+                </div>
+            </div>
+
+
+            <div class="text-center p-2">
+                <p style="font-size: 20px; line-height: 40px; color: white;">Here's what our users are earning:
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- Home section-2 End  -->
+
+
+        <!-- Card section-3 start  -->
+        <section class="section-card text-light py-5  ">
+            <div class="card-section-banner" style="margin-top: 0px;">
+                <div class="container">
+                    <div class="container my-3">
+                        <div class="row">
+
+
+
+
+                            <div class="col-lg-6 col-md-6 my-3">
+                                <div class="testimonial-box">
+                                    <div class="testimonial " style="background-color: white; color: black;">
+                                        <div class="testimonial-user">
+                                            <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="user-img"
+                                                class="user-img">
+                                            <div class="user-info">
+                                                <span class="user-name">Username</span>
+                                            </div>
+                                        </div>
+                                        <span class="testimonial-text">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Hic dignissimos blanditiis similique quod quaerat et
+                                            recusandae tempora. Animi error quaerat labore cum! Ratione veritatis culpa
+                                            illo quo molestiae minima repudiandae.</span>
+                                    </div>
+                                    <div class="testimonial-bottom "
+                                        style="display: flex; justify-content: space-around;">
+                                        <p style="font-size: 25px;  ">Rewards Earned </p>
+                                        <p>
+                                            <i class="fa fa-gbp text-white"
+                                                style="font-size: 25px; color: rgb(21, 184, 21) !important; margin-top: 7px;" aria-hidden="true">
+                                                477</i>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 my-3">
+                                <div class="testimonial-box">
+                                    <div class="testimonial " style="background-color: white; color: black;">
+                                        <div class="testimonial-user">
+                                            <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="user-img"
+                                                class="user-img">
+                                            <div class="user-info">
+                                                <span class="user-name">Username</span>
+                                            </div>
+                                        </div>
+                                        <span class="testimonial-text">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Hic dignissimos blanditiis similique quod quaerat et
+                                            recusandae tempora. Animi error quaerat labore cum! Ratione veritatis culpa
+                                            illo quo molestiae minima repudiandae.</span>
+                                    </div>
+                                    <div class="testimonial-bottom "
+                                        style="display: flex; justify-content: space-around;">
+                                        <p style="font-size: 25px;  ">Rewards Earned </p>
+                                        <p>
+                                            <i class="fa fa-gbp text-white"
+                                                style="font-size: 25px; color: rgb(21, 184, 21) !important; margin-top: 7px;" aria-hidden="true">
+                                                477</i>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="text-center">
+                            <button class="main-btn btn">
+                                Start Earning
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <!-- Card section-3 Enddd  -->
+
+    <!-- footer section-3 start    <span><img src="images/Capture-2.PNG" alt="" srcset=""></span> -->
+    <section class="footer-section py-4 footer-img  ">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 mx-auto py-5">
+                    <div> <img src="images/logo.webp" class="img-fluid" style="width: 330px;"></div>
+                    <div class="spandiv my-2">
+                        <span><img src="images/Capture-2-removebg-preview.png" class="img-fluid ms-1"
+                                style="width:50px;"></span>
+                        <span><img src="images/Capture-1-removebg-preview.png" class="img-fluid"
+                                style="width:50px;"></span>
+                        <span><img src="images/Capture-3-removebg-preview.png" class="img-fluid"
+                                style="width:50px;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section-3 endd  -->
+
+
+    <!-- componay section-5 images start -->
+
+    <div class="logo-container" style="background-color: black; text-align: center;">
+        <div class="logo-item">
+            <img src="images/comp-icon-removebg-preview.png" style="width:100px; margin: 0px 20px;">
+        </div>
+        <div class="logo-item">
+            <img src="images/logo1.png" style="width:100px; margin: 0px 20px;">
+        </div>
+        <div class="logo-item">
+            <img src="images/logo2.png" style="width:100px; margin: 0px 20px;">
+        </div>
+        <div class="logo-item">
+            <img src="images/logo3.png" style="width:100px; margin: 0px 20px;">
+        </div>
+        <div class="logo-item">
+            <img src="https://stocksfc.com/img/logo4.svg" style="width:100px; margin: 0px 20px;">
+        </div>
+        <div class="logo-item">
+            <img src="images/logo5.png" style="width:100px; margin: 0px 20px;">
+        </div>
+    </div>
+
+
+
+    <!-- componay section-5 images Enddd -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

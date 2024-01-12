@@ -20,9 +20,11 @@
 
 
 
+
     <style>
-       body{
-            font-family: "Druk", sans-serif;
+        body {
+            font-family: "Druk" ,sans-serif;
+            
         }
 
         .bg-img-header {
@@ -35,7 +37,7 @@
         }
 
         .text-color {
-            background: linear-gradient(to right, #16B862, #00858F);
+            background: linear-gradient(to right, #018d42, #00858F);
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
 
@@ -130,7 +132,7 @@
             border-radius: 5px;
             backdrop-filter: blur(10px);
             background-color: rgba(255, 255, 255, 0);
-            padding: 10px;
+            padding: 15px;
             text-align: center;
         }
 
@@ -158,13 +160,14 @@
 
         .step-color {
 
-            background: linear-gradient(to right, #07a302, #08aeb9);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            font-size: 30px;
+            /* background: linear-gradient(to right, #07a302, #08aeb9); */
+            /* -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text; */
+            font-size: 20px;
             font-weight: 800;
             text-transform: uppercase;
             margin-top: 10px;
+            color: white;
 
         }
 
@@ -192,14 +195,15 @@
             padding: 5px;
             /* box-sizing: border-box;*/
         }
+
         /* mobile view  */
         @media (max-width: 767px) {
             .logo-item {
-            flex: 0 0 16%;
-            max-width: 16.666%;
-            padding: 5px;
-            /* box-sizing: border-box;*/
-        }
+                flex: 0 0 16%;
+                max-width: 16.666%;
+                padding: 5px;
+                /* box-sizing: border-box;*/
+            }
         }
 
         .logo-item img {
@@ -208,54 +212,104 @@
             display: block;
             max-width: 100%;
         }
+
+        .Tcard .face.back-face .top-left {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 2rem;
+            color: #16B862;
+        }
+
+        .Tcard .face.back-face .bottom-left {
+            position: absolute;
+            top: 70px;
+            right: 10px;
+            font-size: 2rem;
+            color: #16B862;
+        }
+
+
+        .Tcard .face.back-face {
+            /* position: absolute; */
+            background: rgba(255, 255, 255, 0.06);
+            padding: 20px 30px;
+            text-align: center;
+            user-select: none;
+        }
+
+        .Tcard {
+            width: 300px;
+            height: 300px;
+            perspective: 500px;
+            border: none;
+            background-color: inherit;
+        }
+
+        .Tcard {
+            /* position: absolute; */
+            color: #fff;
+            width: 50%;
+            height: 50%;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.06);
+            border-top: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+        }
+
+        @media (max-width: 767px) {
+            .logo-img {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+            }
+        }
     </style>
 
 </head>
 
-<body class="">
+<body >
     <!-- header section-1 start  -->
     <div class="bg-img-header">
 
-        <div style="margin-bottom: 20%;">
-            <nav class="navbar navbar-light text-light py-3" style="width: 100%;">
+        <div>
+            <nav class=" text-light py-3" style="width: 100%;">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/logo.webp" alt="" style="width: 225px; height: 34px;"
-                            class="d-inline-block align-text-top">
+                    <a class="logo-img" href="#">
+                        <img src="images/logo.webp" alt="" style="width: 225px; height: 34px;" class="d-inline-block align-text-top ">
                     </a>
                 </div>
+                
             </nav>
             <!-- header section-1 End  style="padding: 5.875rem 0 9.375rem;"  -->
 
 
             <!-- Home section-2 start -->
-            <section class="home home-section">
-                <div class="container-fluid top-banner px-0">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-6 text-white">
-                                <h3 style="font-size: 37px; font-weight: 900; text-transform: uppercase;">the</h3>
-                                <h1 class=""
-                                    style="font-size: 50px; font-weight:900;text-transform: uppercase; line-height:60px;">
-                                    <span class="text-color">football</span> stock market
-                                </h1>
-                                <!-- 16B862 -->
-                                <button class="main-btn btn ">
-                                    Start Trading
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container-fluid text-center d-flex align-items-center justify-content-center px-0">
+                <div class="col-lg-5 col-md-6 text-white">
+                    <h3 style="font-size: 50px; font-weight: 900; text-transform: uppercase;">
+                        Welcome
+                    </h3>
+                    <h1 style="font-size: 55px; font-weight: 900; text-transform: uppercase; line-height: 25px;">
+                        <span class="text-color">TRADER</span>
+                    </h1>
+                    <p style="font-size: 20px; line-height: 30px; width: 90%; margin-left: 30px; text-align: center; ">it's time to start earning passive income from
+                        football knowledge
+                    </p>
+                    <h3 style="font-size: 33px; font-weight: 900; ">
+                        The Statistics
+                    </h3>
+                    <p style="font-size: 20px; line-height: 30px;">
+                        <span style="font-size: 55px; font-weight: 900; text-transform: uppercase; line-height: 25px;"
+                            class="text-color">70.31%</span> <br>
+                        of stocks have returned a positve ROI%
+                    </p>
                 </div>
-            </section>
+            </div>
         </div>
-    </div>
-
-    <!-- center img  -->
-    <div class="center-img ">
-        <a class="centered-image" href="#">
-            <img src="images/platformimage.webp" alt="platform-image">
-        </a>
     </div>
 
 
@@ -265,27 +319,27 @@
     </div>
     <!-- Card section-3 start  -->
     <section class="section-card bg-dark text-light py-5 card-section ">
-        <div class="card-section-banner" style="margin-top: 12%;">
+        <div class="card-section-banner" style="margin-top: 2%;">
             <div class="container">
-                <div class="text-center p-2">
-                    <p style="font-size: 20px; line-height: 40px;">You've been invited to the <br> Football Stock Market
-                    </p>
-                    <h1 style="font-size:45px; font-weight: 800; text-transform: uppercase;">how does <br>
-                        <span class="text-color "> it work</span>
-                    </h1>
-                </div>
+
                 <div class="container my-3">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 my-3">
                             <div class="card py-4 steps-card">
                                 <div class="con steps-card-icon">
-                                    <i class="fa fa-bath text-white" style="font-size: 30px;" aria-hidden="true"></i>
+                                    <i class="fa fa-line-chart text-white" style="font-size: 30px;"
+                                        aria-hidden="true"></i>
                                 </div>
                                 <h2 class="text-center step-color">
-                                    Step 1
+                                    Buy Your First Stocks
                                 </h2>
                                 <p class="text-center" style="font-size: 15px; line-height: 20px;">
-                                    Add your players to your portfolio
+                                    Build your portfolio by acquiring newly released stocks on the <sapn
+                                        style="color: #16B862;">IOP Page</sapn>
+                                    .
+                                    You can also buy, sell and trade stocks with other users on the <span
+                                        style="color: #16B862;">transfer
+                                        Market</span>
                                 </p>
                             </div>
                         </div>
@@ -293,13 +347,17 @@
                         <div class="col-lg-6 col-md-6 my-3">
                             <div class="card py-4 steps-card">
                                 <div class="con steps-card-icon">
-                                    <i class="fa fa-bath text-white" style="font-size: 30px;" aria-hidden="true"></i>
+                                    <i class="fa fa-dollar text-white" style="font-size: 30px;" aria-hidden="true"></i>
                                 </div>
                                 <h2 class="text-center step-color">
-                                    Step 2
+                                    Earn Cash Rewards
                                 </h2>
                                 <p class="text-center" style="font-size: 15px; line-height: 20px;">
-                                    Watch the real live games that your players are playing in
+                                    You will automatically earn <span style="color: #16B862;">Cash Rewards</span> when
+                                    the players you own
+                                    perform well in the real live games. Watch
+                                    your players rise up the <sapn style="color: #16B862;">Live Ranking</sapn> on a
+                                    matchday.
                                 </p>
                             </div>
                         </div>
@@ -307,41 +365,82 @@
                         <div class="col-lg-6 col-md-6 my-3">
                             <div class="card py-4 steps-card">
                                 <div class="con steps-card-icon">
-                                    <i class="fa fa-bath text-white" style="font-size: 30px;" aria-hidden="true"></i>
+                                    <i class="fa fa-file-text text-white" style="font-size: 30px;"
+                                        aria-hidden="true"></i>
                                 </div>
                                 <h2 class="text-center step-color">
-                                    Step 3
+                                    Read the Whitepaper
                                 </h2>
                                 <p class="text-center" style="font-size: 15px; line-height: 20px;">
-                                    Collective your cash payouts every time your players score highly
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 my-3">
-                            <div class="card py-4 steps-card">
-                                <div class="con steps-card-icon">
-                                    <i class="fa fa-bath text-white" style="font-size: 30px;" aria-hidden="true"></i>
-                                </div>
-                                <h2 class="text-center step-color">
-                                    Step 4
-                                </h2>
-                                <p class="text-center" style="font-size: 15px; line-height: 20px;">
-                                    Keep collecting rewards or sell your players
+                                    The Whitepaper explains how the platform operated in more detail. Make sure you also
+                                    join our Discord Channel and follow us on X.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="text-center">
-                    <button class="main-btn btn">
-                        Sign Up here
-                    </button>
+                    <p>Check out the user content on <br> <span
+                            style="font-size: 25px; font-weight: 600; line-height: 18px;">YouTube</span></p>
+
                 </div>
+
 
             </div>
         </div>
+
     </section>
+
+
+    <!-- testimonial  -->
+
+
+    <div class="" style="background-color: black; border-top: 1px solid #c9c8c8;  border-bottom: 1px solid #c9c8c8;">
+        <div
+            style="padding-bottom:6%; padding-top:6%; display: flex;justify-content: center; flex-direction: column; align-items: center;">
+
+            <div class="text-center text-white mb-4">
+                <span><span style="font-size: 30px; font-weight: 900;">Testimonial</span> <br>
+                    Our USER SAY
+                </span>
+            </div>
+            <div class="Tcard ">
+
+                <div class="face back-face">
+                    <span class="fas fa-quote-left top-left"></span>
+                    <div class="testimonial">
+                        StocksFC allows me to earn passive income from the game I love
+                        <p style="color: #16B862;">-KrisTalksCrypto</p>
+                    </div>
+                    <span class="fas fa-quote-left bottom-left fa-flip-horizontal"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- contact us  -->
+
+    <div class="" style="background-color: rgba(12, 11, 11, 0.952); ">
+        <div style="padding-bottom:10px; padding-top:10px; ">
+
+            <div class="text-center text-white mb-4"
+                style="display: flex; justify-content: center; flex-direction: row; align-items: center;">
+                <p class="" style="margin-top: 35px; margin-right: 10px;">
+                    Have a Question?
+                </p>
+                <button class=" btn">
+                    Contact Us
+                </button>
+            </div>
+
+        </div>
+
+    </div>
 
     <!-- Card section-3 Enddd  -->
 
